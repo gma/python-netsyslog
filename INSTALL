@@ -1,0 +1,24 @@
+INSTALL
+=======
+
+Installation is very straightforward. Simply run the following command
+from a terminal in which you have administrator privileges:
+
+    # python setup.py install
+
+To test the installation ensure your syslog server is listening for
+incoming connections, then run an interactive Python interpreter and
+try the following code.
+
+    $ python
+    Python 2.4.1 (#2, Mar 30 2005, 21:51:10)
+    [GCC 3.3.5 (Debian 1:3.3.5-8ubuntu2)] on linux2
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import netsyslog
+    >>> import syslog
+    >>> logger = netsyslog.Logger()
+    >>> logger.add_host("myhost")
+    >>> logger.log(syslog.LOG_USER, syslog.LOG_INFO, "Test", pid=True)
+
+You should see a log message appear in one of your syslog files
+(probably /var/log/messages).

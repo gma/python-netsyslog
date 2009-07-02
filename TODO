@@ -1,0 +1,6 @@
+TODO
+====
+
+- Move all automatic behaviour into Logger class.
+
+- Get rid of copious use of DEFAULT_FOO vars that obfuscate the tests.
