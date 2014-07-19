@@ -18,7 +18,9 @@ typical requirement of a logging package) to one or more syslog
 servers.
 
 The format of the UDP packets sent by netsyslog adheres closely to
-that defined in RFC 3164.
+that defined in [RFC 3164][].
+
+[RFC 3164]: http://tools.ietf.org/html/rfc3164
 
 Installation
 ------------
